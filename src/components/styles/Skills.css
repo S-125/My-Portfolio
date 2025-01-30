@@ -1,0 +1,83 @@
+/* Container for the skills section */
+.skills-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    color:  rgb(230, 239, 100);
+  }
+  
+  /* Title for the skill section */
+  .skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Individual skill bar */
+  .skill-bar {
+    margin: 15px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Skill name */
+  .skill-name {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color:  rgb(230, 239, 100);
+  }
+  
+  /* Bar container */
+  .bar-container {
+    width: 100%;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Skill progress (the animated part of the bar) */
+  .skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #f4d775, rgb(241, 241, 25), #ecb81d);
+    transition: width 3s ease-in-out;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  /* Skill level text */
+  .skill-level {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: rgb(230, 239, 100);
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 600px) {
+    .skills-section {
+      padding: 20px;
+    }
+  
+    .skill-name {
+      font-size: 1rem;
+    }
+  
+    .skill-level {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .outlined-text {
+    text-shadow: 
+      -1px -1px 0px rgb(134, 3, 3),  
+       1px -1px 0px rgb(134,3,3),  
+      -1px  1px 0px rgb(134,3,3),  
+       1px  1px 0px rgb(134,3,3);
+  }
+  

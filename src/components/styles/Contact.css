@@ -1,0 +1,28 @@
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background: radial-gradient(circle at 50% 50%, #9b016d, rgb(86, 1, 86), #030b3e);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container h2 {
+    font-size: 2rem;
+    color:rgb(230, 239, 100);
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+  
+  .contact-container p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  .contact-item{
+    a{
+        color:rgb(242, 242, 126)
+    }
+  }
+ 
