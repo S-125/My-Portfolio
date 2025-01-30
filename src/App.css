@@ -1,4 +1,7 @@
 /* General body styles */
+* {
+  cursor: url('/My-Portfolio/icons8-butterfly-side-view-24.png'), auto;
+}
 body {
   margin: 0;
   padding: 0;
