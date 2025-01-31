@@ -64,4 +64,8 @@
   .navbar__right {
     display: none;
   }
+  .logo{
+    margin-left: 20px;
+  }
+
 }
