@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './styles/Skills.css'; // Import the styles for the skill bars
+import './styles/Skills.css'; 
 
-// Skill data with skill name and level in percentage
 const skillsData = [
   { name: 'HTML', level: 90 },
   { name: 'CSS', level: 85 },
@@ -9,30 +8,29 @@ const skillsData = [
   { name: 'React', level: 85 },
 ];
 
-// SkillBar component to display each individual skill bar
 const SkillBar = ({ skill }) => {
   const barRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
-  // Use IntersectionObserver to detect when the skill bar is in view
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
         if (entry.isIntersecting) {
-          setIsVisible(true); // Trigger animation when skill bar is visible
+          setIsVisible(true); 
         }
       },
-      { threshold: 0.5 } // 50% of the skill bar must be visible to trigger animation
+      { threshold: 0.5 } 
     );
 
     if (barRef.current) {
-      observer.observe(barRef.current); // Start observing the skill bar
+      observer.observe(barRef.current); 
     }
 
     return () => {
       if (barRef.current) {
-        observer.unobserve(barRef.current); // Stop observing on cleanup
+        observer.unobserve(barRef.current); 
       }
     };
   }, []);

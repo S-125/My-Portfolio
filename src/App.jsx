@@ -6,6 +6,7 @@ import Skills from './components/Skills'; // Import your skills component
 import sticker from './assets/Pink Butterfly Sticker.gif';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import resume from '/resume.pdf';
 function App() {
   return (
     <>
@@ -16,6 +17,8 @@ function App() {
             <p>
               <span style={{color:" rgb(230, 239, 100)"}}>Hello !!</span> <br /> I'm Sritama Mitra ,<br/> a passionate Frontend Developer focused on creating responsive, visually appealing, and user-friendly web experiences.
             </p>
+            <a href={resume} download="Sritama's Resume" className="resume">My Resume</a>
+
           </div>
           <div className="right">
             <img src={butterfly} alt="White butterfly animation" />
